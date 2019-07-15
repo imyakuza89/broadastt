@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 var prefix = "Y"
-var adminprefix = 'Y'
+var adminprefix = '$'
 
 
 //bc
@@ -23,7 +23,7 @@ client.on("message", message => {
 //bc online
 
 
-  var prefix = "Y";
+  var prefix = "$";
 
   client.on("message", message => {
   
@@ -78,11 +78,11 @@ m.sendMessage(args)
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help|هيلب
 
-       Yobc | لأرسال برود كاست للكل
+       $obc | لأرسال برود كاست للكل
 
-       Ybc  |  لأرسال برود كاست للأونلاين
+       $bc  |  لأرسال برود كاست للأونلاين
 
-       Yadminbc | برودكاست عادي
+       $adminbc | برودكاست عادي
 
        ** `)
    message.author.sendEmbed(embed)
